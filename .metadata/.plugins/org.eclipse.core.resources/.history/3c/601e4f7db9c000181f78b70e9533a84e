@@ -1,0 +1,6 @@
+User Login:===:===<%String UserName = (String) session.getAttribute("uname.");
+			out.println(UserName);%>
+User Password::<%String Password = (String) session.getAttribute("password.");
+			out.println(Password);%>
+Education::<%String edu = (String) session.getAttribute("education.");
+			out.println(edu);%>

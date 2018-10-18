@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<context:annotation-config />
+	
+	<!-- Enable AspectJ style of Spring AOP -->
+	<aop:aspectj-autoproxy />
+	
+	<!-- <bean id="propertyConfigurer "
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>xyz.properties</value>
+				List other property files here
+				value>mail.properties</value
+			</list>
+		</property>
+	</bean>
+	
+	<beans>
+		<bean id="xyz" class="com.javabykiran.XYZ"></bean>
+		<bean id="aop" class="com.javabykiran.AOP"></bean>
+		<bean id="stu" class="com.javabykiran.Student"></bean>
+		<bean id="address" class="com.javabykiran.Address"></bean>
+	    
+	</beans> -->
+	<!-- <bean id="address" class="com.av.Address1">
+	<constructor-arg value="SBI Bank"></constructor-arg>
+	<constructor-arg value="postoffice"></constructor-arg>
+	<property name="location" value="Nagpur"></property>
+	<property name="pincode" value="440024"></property>
+	</bean>
+	<bean id="student" class="com.av.Student">
+	<property name="name" value="Avanti"></property>
+	<property name="age" value="23"></property>
+	<property name="mobile">
+	<list>
+	<value>9482942573</value>
+	<value>4239846239</value>
+	<value>9742847888</value>
+	</list>
+	</property>
+	<property name="address">
+	<ref local="addr"/>
+	</property>
+	</bean> -->
+	<beans>
+		<bean id="student" class="com.av.Student"></bean>
+		<bean id="address" class="com.av.Address1"></bean>
+	    
+	</beans>
+	
+</beans>   
+  
